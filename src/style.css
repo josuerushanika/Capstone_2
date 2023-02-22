@@ -21,6 +21,7 @@ body {
 /* styling for pop up window */
 
 .popup {
+  display: flex;
   width: 100vw;
   height: 100vh;
   top: 0;
