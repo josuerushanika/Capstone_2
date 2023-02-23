@@ -1,5 +1,6 @@
 import getShow from './getShow.js';
 import likeBtn from '../assets/like-btn.png';
+import getLikes from './getLikes.js';
 import movieCount from './totalMovies.js';
 import fetchData from './popUp.js';
 
@@ -25,8 +26,9 @@ const displayDOM = async () => {
     </div>
       `;
     main.innerHTML += output;
+    const movie = document.querySelectorAll('.movie-box');
     const num = document.querySelector('#movie-counter');
-
+    getLikes(movie);
     movieCount(main, num);
   });
 

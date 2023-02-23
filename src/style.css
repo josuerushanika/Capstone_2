@@ -71,7 +71,6 @@ body {
 }
 
 .like-img {
-  display: none;
   height: 50%;
   margin-left: 3%;
 }
@@ -205,7 +204,8 @@ td {
   padding-left: 3rem;
 }
 
-.comment-btn {
+.comment {
+  width: 100%;
   padding: 2%;
   color: white;
   background-color: rgb(126, 4, 4);
