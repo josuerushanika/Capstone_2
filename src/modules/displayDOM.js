@@ -21,7 +21,7 @@ const displayDOM = async () => {
       <img src=${likeBtn} alt="like -img" class="like-img">
       </div>
       <div id="btn-ctn">
-      <button id="${show.name}" data-index="${show.id}" class="comment">comment</button>
+      <button id="${show.name}" data-index="${show.id}" class="comment comment-btn">comment </button>
       </div>
     </div>
       `;
