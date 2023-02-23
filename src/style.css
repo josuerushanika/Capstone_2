@@ -67,6 +67,7 @@ body {
 }
 
 .like-img {
+  display: none;
   height: 50%;
   margin-left: 3%;
 }
