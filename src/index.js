@@ -5,4 +5,7 @@ import displayDOM from './modules/displayDOM.js';
 const logoImg = document.getElementById('logo');
 logoImg.src = logo;
 
-displayDOM();
+const newFunc = async () => {
+  await displayDOM();
+};
+newFunc();

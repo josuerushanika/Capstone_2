@@ -56,7 +56,9 @@ body {
 }
 
 .title {
-  font-size: 1rem;
+  width: 70%;
+  font-size: 1.2rem;
+  margin-right: 5%;
 }
 
 .like-line {
@@ -71,4 +73,11 @@ body {
 
 .comment-btn {
   padding: 2%;
+  color: white;
+  background-color: rgb(126, 4, 4);
+  border-radius: 2%;
+}
+
+.dynLike {
+  margin-right: 2%;
 }
