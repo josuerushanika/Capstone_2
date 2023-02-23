@@ -3,7 +3,7 @@ const config = {
   verbose: true,
 };
 
-const moduleAlias = require('module-alias');
+const moduleAlias = require('module-alias'); // eslint-disable-line
 
 moduleAlias.addAliases({
   '@assets': `${__dirname}/path/to/your/assets`,
