@@ -8,7 +8,7 @@ const displayDOM = async () => {
   const main = document.querySelector('.main-wrapper');
   const allShows = await getShow();
   const shows = allShows.splice(150, 20);
-  
+
   shows.forEach((show) => {
     output = `
     <div class="movie-box">
