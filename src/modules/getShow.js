@@ -5,4 +5,3 @@ const getShow = async () => {
 };
 
 export default getShow;
-

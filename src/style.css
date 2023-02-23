@@ -33,7 +33,6 @@ body {
 
 .alert {
   display: block;
-
 }
 
 .name {
@@ -122,7 +121,6 @@ body {
   padding-top: 124px;
   font-size: 3rem;
   cursor: pointer;
-  
 }
 
 .namepop {
@@ -203,6 +201,7 @@ td {
   text-align: center;
   padding-left: 3rem;
 }
+
 .comment-btn {
   padding: 2%;
 }
