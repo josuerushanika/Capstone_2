@@ -12,7 +12,7 @@ const clickClose = (container) => {
 
 const fetchData = async () => {
   const data = await getData();
-  const res = data.splice(0, 28);
+  const res = data.splice(150, 20);
 
   const container = document.querySelector('.alert');
   const btn = document.querySelectorAll('.comment');
@@ -27,7 +27,7 @@ const fetchData = async () => {
           <div class="popup">
           <div class="content">
           <div class="part">
-          <i class="fa-solid fa-x close fa-2x cancel" aria-hidden="true"></i>
+          <i class="fa-solid fa-x close fa-2x cancel" aria-hidden="true">x</i>
           <img class="popImage" src="${dataObj.image.medium}"/>
           <p class="namepop">${dataObj.name}</p>
           <div id="${dataObj.id}">
