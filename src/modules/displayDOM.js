@@ -3,7 +3,6 @@ import likeBtn from '../assets/like-btn.png';
 import movieCount from './totalMovies.js';
 import fetchData from './popUp.js';
 
-const Movies = document.querySelector('.main-wrapper');
 const displayDOM = async () => {
   let output = '';
   const main = document.querySelector('.main-wrapper');
@@ -26,7 +25,7 @@ const displayDOM = async () => {
     main.innerHTML += output;
     const num = document.querySelector('#movie-counter');
 
-    movieCount(Movies, num);
+    movieCount(main, num);
   });
   fetchData();
 };
