@@ -33,6 +33,7 @@ body {
 
 .alert {
   display: block;
+
 }
 
 .name {
@@ -201,4 +202,7 @@ td {
   font-weight: 600;
   text-align: center;
   padding-left: 3rem;
+}
+.comment-btn {
+  padding: 2%;
 }
