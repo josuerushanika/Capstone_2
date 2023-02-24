@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background-color: red;
+  background-color: rgb(117, 7, 7);
   margin-top: -2%;
 }
 
@@ -17,6 +17,10 @@ body {
   list-style: none;
   padding: 1% 4%;
   font-size: 2rem;
+}
+
+.nav-list > * {
+  color: white;
 }
 
 #logo {
@@ -92,7 +96,7 @@ body {
 }
 
 .popImage {
-  width: 60%;
+  width: 30%;
   height: 75%;
   padding-top: 30px;
 }
@@ -137,6 +141,10 @@ form {
   width: 40%;
 }
 
+form h2 {
+  margin-left: 35%;
+}
+
 input {
   border-radius: 5px;
   height: 20%;
@@ -163,9 +171,9 @@ button[type=submit] {
 
 table {
   height: 10vh;
-  width: 80%;
+  width: 120%;
   padding: 1rem;
-  margin: 0 auto;
+  margin: 2% -10%;
 }
 
 table,
@@ -201,7 +209,7 @@ td {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  padding-left: 3rem;
+  padding-left: 7rem;
 }
 
 .comment-btn {
