@@ -1,23 +1,25 @@
 import { postComments, getComments } from './commentApi.js';
 
-const getAllComments = async (id) => {
-  const data = await getComments(id);
-  return data.json();
-};
+async function getAllComments(id) {
+  const response = await getComments(id);
+  const comments = await response.json();
+  return comments;
+}
 
 const displayComments = (data) => {
   const table = document.querySelector('.table');
   const commentSpan = document.querySelector('.commentspan');
   if (data.length) {
-    table.innerHTML = '';
-    data.forEach((elem) => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td class="username">${elem.username}</td>
-      <td class="comment">${elem.comment}</td>
-      <td class="creation_date">${elem.creation_date}</td> `;
-      table.appendChild(tr);
+    let tableHTML = '';
+    data.forEach(({ username, comment, creationDate }) => {
+      tableHTML += `<tr>
+        <td class="username">${username}</td>
+        <td class="comment">${comment}</td>
+        <td class="creation_date">${creationDate}</td>
+      </tr>`;
     });
-    commentSpan.innerHTML = `${data.length} comments for this movie`;
+    table.innerHTML = tableHTML;
+    commentSpan.textContent = `${data.length} comments for this movie`;
   }
 };
 
@@ -26,11 +28,11 @@ const getAllComment = async (id) => {
   const commentSpan = document.querySelector('.commentspan');
   const data = await getComments(id);
   if (data.length) {
-    data.forEach((elem) => {
+    data.forEach(({ username, comment, creationDate }) => {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td class="username">${elem.username}</td>
-      <td class="comment">${elem.comment}</td>
-      <td class="creation_date">${elem.creation_date}</td> `;
+      tr.innerHTML = `<td class="username">${username}</td>
+      <td class="comment">${comment}</td>
+      <td class="creation_date">${creationDate}</td> `;
       table.appendChild(tr);
     });
     commentSpan.innerHTML = `${data.length} comments for this movie`;
