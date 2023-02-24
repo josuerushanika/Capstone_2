@@ -26,11 +26,11 @@ const displayDOM = async () => {
     </div>
       `;
     main.innerHTML += output;
-    const movie = document.querySelectorAll('.movie-box');
-    const num = document.querySelector('#movie-counter');
-    getLikes(movie);
-    movieCount(main, num);
   });
+  const movie = document.querySelectorAll('.movie-box');
+  const num = document.querySelector('.count');
+  getLikes(movie);
+  movieCount(main, num);
 
   fetchData();
 };
