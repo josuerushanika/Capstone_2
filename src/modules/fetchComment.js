@@ -1,4 +1,5 @@
 import { postComments, getComments } from './commentApi.js';
+import commentCount from './totalComment.js';
 
 async function getAllComments(id) {
   const response = await getComments(id);
@@ -19,7 +20,7 @@ const displayComments = (data) => {
       </tr>`;
     });
     table.innerHTML = tableHTML;
-    commentSpan.textContent = `${data.length} comments for this movie`;
+    commentCount(table, commentSpan);
   }
 };
 
@@ -35,7 +36,7 @@ const getAllComment = async (id) => {
       <td class="creation_date">${creationDate}</td> `;
       table.appendChild(tr);
     });
-    commentSpan.innerHTML = `${data.length} comments for this movie`;
+    commentCount(table, commentSpan);
   }
 };
 
