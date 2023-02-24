@@ -1,5 +1,6 @@
 import getShow from './getShow.js';
 import likeBtn from '../assets/like-btn.png';
+import getLikes from './getLikes.js';
 import movieCount from './totalMovies.js';
 import fetchData from './popUp.js';
 
@@ -20,13 +21,14 @@ const displayDOM = async () => {
       <img src=${likeBtn} alt="like -img" class="like-img">
       </div>
       <div id="btn-ctn">
-      <button id="${show.name}" data-index="${show.id}" class="comment">comment</button>
+      <button id="${show.name}" data-index="${show.id}" class="comment comment-btn">comment </button>
       </div>
     </div>
       `;
     main.innerHTML += output;
+    const movie = document.querySelectorAll('.movie-box');
     const num = document.querySelector('#movie-counter');
-
+    getLikes(movie);
     movieCount(main, num);
   });
 
