@@ -1,0 +1,228 @@
+body {
+  background-color: bisque;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+  background-color: rgb(117, 7, 7);
+  margin-top: -2%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1% 4%;
+  font-size: 2rem;
+}
+
+.nav-list > * {
+  color: white;
+}
+
+#logo {
+  height: 60px;
+}
+
+.designers {
+  display: flex;
+  background-color: black;
+  gap: 0.5rem;
+  font-size: 16px;
+  margin-top: 5rem;
+}
+
+.alert {
+  display: block;
+}
+
+.name {
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1%;
+  padding: 2%;
+}
+
+.movie-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-box > * {
+  margin-bottom: 3%;
+}
+
+.title {
+  width: 70%;
+  font-size: 1.2rem;
+  margin-right: 5%;
+}
+
+.like-line {
+  display: flex;
+  align-items: center;
+}
+
+.like-img {
+  height: 50%;
+  margin-left: 3%;
+}
+
+.comment {
+  padding: 2%;
+}
+
+/* styling for pop up window */
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+}
+
+.popImage {
+  width: 30%;
+  height: 75%;
+  padding-top: 30px;
+}
+
+.content {
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  width: 70%;
+  margin: 0 auto;
+  height: 80%;
+  padding-top: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.part {
+  margin-top: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cancel {
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20%;
+  top: 5%;
+}
+
+.namepop {
+  font-size: 60px;
+  margin: 2%;
+}
+
+form {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 40%;
+  margin-right: -2%;
+}
+
+form h2 {
+  margin-left: 35%;
+}
+
+input {
+  border-radius: 5px;
+  height: 20%;
+  border: 1px solid rgb(0, 77, 153);
+  padding: 15px;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid rgb(0, 77, 153);
+}
+
+button[type=submit] {
+  padding: 10px;
+  background-color: rgb(0, 77, 153);
+  color: white;
+  margin-bottom: 30px;
+}
+
+#heart {
+  cursor: pointer;
+}
+
+table {
+  height: 10vh;
+  width: 150%;
+  padding: 1rem;
+  margin: 2% -20%;
+}
+
+table,
+tr {
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+tr:hover {
+  background-color: #66f;
+}
+
+th {
+  padding: 10px;
+}
+
+td {
+  padding-right: 5px;
+  text-align: center;
+  width: 140px;
+}
+
+.commentBtn {
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: rgb(0, 77, 153);
+  color: white;
+}
+
+.commentspan {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 7rem;
+}
+
+.comment-btn {
+  width: 100%;
+  padding: 2%;
+  color: white;
+  background-color: rgb(126, 4, 4);
+  border-radius: 2%;
+}
+
+.dynLike {
+  margin-right: 2%;
+}
