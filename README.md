@@ -19,6 +19,8 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+     - [Key Features](#key-features)
+
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
@@ -34,13 +36,12 @@
 <br>
 
 <!-- DEPLOYMENT -->
-### This project goes live [here](https://github.com/josuerushanika/Capstone_2/dist/) 🚀 .
-If link does not work copy URL ( https://github.com/josuerushanika/Capstone_2/dist/ )
+### This project goes live [here](https://josuerushanika.github.io/Capstone_2/dist/) 🚀 .
 
 <br>
 
 <!-- DEPLOYMENT -->
-<!-- ### Have a look at the project's video presentation [here](https://www.loom.com/share/1f7de2b9345a4d3988c6327952899d30) 📽️ . -->
+### Have a look at the project's video presentation [here](https://drive.google.com/file/d/1skgLsHGHswEhiKERjOi6zl1o8dcdOaxm/view?usp=sharing) 📽️ .
 
 <br>
 
