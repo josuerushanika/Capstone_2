@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import commentCount from "../totalComment.js";
+import commentCount from '../totalComment.js';
 
 describe('commentCount', () => {
   let table;
