@@ -114,7 +114,8 @@ body {
 }
 
 .part {
-  height: 70%;
+  margin-top: 15%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,15 +123,17 @@ body {
 }
 
 .cancel {
-  margin-top: 40%;
-  padding-left: 90%;
-  padding-top: 124px;
+
   font-size: 3rem;
   cursor: pointer;
+  position: absolute;
+  right: 20%;
+  top: 5%;
 }
 
 .namepop {
   font-size: 60px;
+  margin: 2%;
 }
 
 form {
@@ -139,6 +142,7 @@ form {
   flex-direction: column;
   row-gap: 15px;
   width: 40%;
+  margin-right: -2%;
 }
 
 form h2 {
@@ -171,9 +175,9 @@ button[type=submit] {
 
 table {
   height: 10vh;
-  width: 120%;
+  width: 150%;
   padding: 1rem;
-  margin: 2% -10%;
+  margin: 2% -20%;
 }
 
 table,
