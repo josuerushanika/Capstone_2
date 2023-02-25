@@ -35,7 +35,6 @@
 
 <!-- DEPLOYMENT -->
 ### This project goes live [here](https://github.com/josuerushanika/Capstone_2/dist/) 🚀 .
-If link does not work copy URL ( https://github.com/josuerushanika/Capstone_2/dist/ )
 
 <br>
 
