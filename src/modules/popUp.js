@@ -1,6 +1,5 @@
 import getData from './api.js';
 import { sendComment, getAllComment } from './fetchComment.js';
-import commentCount from './totalComment.js';
 
 const closePopup = (container) => {
   const cancelBtn = document.querySelector('.cancel');
