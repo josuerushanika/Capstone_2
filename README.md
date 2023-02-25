@@ -41,7 +41,7 @@
 <br>
 
 <!-- DEPLOYMENT -->
-<!-- ### Have a look at the project's video presentation [here](https://www.loom.com/share/1f7de2b9345a4d3988c6327952899d30) 📽️ . -->
+### Have a look at the project's video presentation [here](https://drive.google.com/file/d/1skgLsHGHswEhiKERjOi6zl1o8dcdOaxm/view?usp=sharing) 📽️ .
 
 <br>
 
