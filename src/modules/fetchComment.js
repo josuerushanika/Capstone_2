@@ -9,19 +9,18 @@ async function getAllComments(id) {
 
 const displayComments = (data) => {
   const table = document.querySelector('.table');
-  const commentSpan = document.querySelector('.commentspan');
+  // const commentSpan = document.querySelector('.commentspan');
   if (data.length) {
     let tableHTML = '';
-    data.forEach(({ username, comment, creationDate }) => {
+    data.forEach(({ username, comment }) => {
       tableHTML += `<tr>
         <td class="username">${username}</td>
-        <td class="comment">${comment}</td>
-        <td class="creation_date">${creationDate}</td>
+        <td class="comment">${comment}</td> 
       </tr>`;
     });
     table.innerHTML = tableHTML;
-    commentCount(table, commentSpan);
   }
+  // commentCount(table, commentSpan);
 };
 
 const getAllComment = async (id) => {
@@ -29,15 +28,14 @@ const getAllComment = async (id) => {
   const commentSpan = document.querySelector('.commentspan');
   const data = await getComments(id);
   if (data.length) {
-    data.forEach(({ username, comment, creationDate }) => {
+    data.forEach(({ username, comment }) => {
       const tr = document.createElement('tr');
       tr.innerHTML = `<td class="username">${username}</td>
-      <td class="comment">${comment}</td>
-      <td class="creation_date">${creationDate}</td> `;
+      <td class="comment">${comment}</td>`;
       table.appendChild(tr);
     });
-    commentCount(table, commentSpan);
   }
+  commentCount(table, commentSpan);
 };
 
 const sendComment = (id, username, usercomment) => {

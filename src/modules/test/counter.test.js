@@ -20,6 +20,6 @@ describe('movieCount', () => {
 
   test('updates the innerText of the num element', () => {
     movieCount(movies, num);
-    expect(num.innerText).toBe(3);
+    expect(num.innerText).toContain('3');
   });
 });

@@ -23,7 +23,6 @@ const renderPopup = (dataObj) => {
               <tr>
                 <td>username</td>
                 <td>comment</td>
-                <td>creation_date</td>
               </tr>
             </table>
           </div>
@@ -41,6 +40,9 @@ const renderPopup = (dataObj) => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const table = document.querySelector('.table');
+    const rows = table.querySelectorAll('tr');
+    const count = rows.length - 1;
+    const commentSpan = document.querySelector('.commentspan');
     const name = document.querySelector('#username');
     const comment = document.querySelector('#usercomment');
     const username = name.value;
@@ -49,6 +51,7 @@ const renderPopup = (dataObj) => {
     table.innerHTML = '';
     getAllComment(parseInt(dataObj.id, 10));
     form.reset();
+    commentSpan.innerText = `${count + 1} comments for this Show`;
   });
   getAllComment(parseInt(dataObj.id, 10));
   closePopup(container);
